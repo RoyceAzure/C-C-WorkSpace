@@ -1,0 +1,9 @@
+
+target server_main: dependencies Socket.o
+    g++ Socket.o -o Socket
+
+target  Socket.o: dependencies Socket.cpp Socket.h
+    g++ -c Socket.cpp
+
+clean:
+    rm *.o 
