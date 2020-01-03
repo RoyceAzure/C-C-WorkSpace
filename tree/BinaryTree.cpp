@@ -1,5 +1,5 @@
 #include<iostream>
-#include"D:\cworkspace\general\random.h"
+#include"D:/WorkSpace/C++/C-C-WorkSpace/general/random.h"
 
 using namespace std;
 template<class T>
