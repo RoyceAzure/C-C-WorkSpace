@@ -26,22 +26,22 @@ bool isFileExist(const char * path)
 	return false;
 }
 
-Myfile CreateFile()
-{
-	char path[NMAX];
-	printf("Please input file name:\n");
-	scanf("%49[^\n]%*c", path);
-	Myfile file = (Myfile)malloc(sizeof(file));
-	if(!isFileExist(path))
-	{
-		strcpy(file->path , path);
-		file->fileStream = fopen(path, "w");
-	}
-	else
-		printf("file already exist");
-	fclose(file->fileStream);
-	return file;
-}
+//Myfile CreateFile()
+//{
+//	char path[NMAX];
+//	printf("Please input file name:\n");
+//	scanf("%49[^\n]%*c", path);
+//	Myfile file = (*file)malloc(sizeof(file));
+//	if(!isFileExist(path))
+//	{
+//		strcpy(file->path , path);
+//		file->fileStream = fopen(path, "w");
+//	}
+//	else
+//		printf("file already exist");
+//	fclose(file->fileStream);
+//	return file;
+//}
 
 void WriteFile(Myfile source)
 {   
@@ -74,7 +74,7 @@ char *trimwhitespace(char *str)
 }
 void AnalysicsFile(Myfile source)
 {
-	unsigned short length, token, alpha, number, i = 0;
+	unsigned short length, token = 0, alpha = 0, number = 0, i = 0;
 	bool isStriked = false;
 	char temp[CMAX];
 	strcpy(temp, source->ContentBuffer);
@@ -108,8 +108,8 @@ int main()
 	
 	char Rbuffer[50];
 	char *testbuffer = "    abcde 123 2   ";
-	printf("fasdfas");
-//	printf("\n %s\n", trimwhitespace(testbuffer));
+	printf("fasdfa123351321s");
+//	printf("\n %s\n", trimwhitespace(testbuffer));  
 //	FILE *test = fopen("test2.txt","w+");
 //	fwrite(testbuffer, 1, 5, test);
 //	fclose(test);
@@ -131,6 +131,6 @@ int main()
    
    
    
-   return(0);
+   return 0;
 	
 } 
