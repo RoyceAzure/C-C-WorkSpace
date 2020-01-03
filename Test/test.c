@@ -1,15 +1,10 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-#define CMAX 20
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "./neuron.h"
 
-int main()
-{
-	srand(time(NULL));
-	char buffer[CMAX];
-	fgets(buffer, CMAX, stdin);
-	int trans = atoi(buffer);
-//	printf("%d\n", trans);
-	printf("%d\n", (atoi(buffer))+30);	
-	return 0;
+int main(int argc, char *argv[]) {
+    int prime = isPrime(3);
+    printf("isPrime(%d) = %d\n", 3, prime);
+    return 0;
 }

@@ -24,5 +24,12 @@
       "-std=c++17",
       "-Wall"
     ],
-    "clang.completion.enable": true 
+    "clang.completion.enable": true,
+    "files.associations": {
+      "array": "c",
+      "string": "c",
+      "string_view": "c",
+      "clinkedqueue.h": "c",
+      "unordered_map": "cpp"
+    }
   }

@@ -1,22 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-#define true 1
-#define false 0
-
-typedef unsigned char boolean;
-typedef struct Node
-{
-    int data;
-    struct Node *next;
-    struct Node *pre;
-} *QNodeptr;
-typedef struct queue
-{
-    QNodeptr front, end;
-    unsigned int length ;
-} *Mqueue;
-
+#include "D:\WorkSpace\C++\C-C-WorkSpace\general\MDataStruct.h"
 boolean isQueueEmpty(Mqueue queue)
 {
     if(queue->front == NULL)
@@ -25,7 +10,7 @@ boolean isQueueEmpty(Mqueue queue)
 }
 Mqueue PushQueue(Mqueue queue, int data)
 {
-    QNodeptr Nnode = (QNodeptr)calloc(1, sizeof(struct Node));
+    QNodeptr Nnode = (QNodeptr)calloc(1, sizeof(Node));
     Nnode->data = data;
     if(isQueueEmpty(queue))   //Queue 初始化
     {
