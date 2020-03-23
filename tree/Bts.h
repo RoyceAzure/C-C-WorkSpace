@@ -2,7 +2,7 @@
 #define BTS_H
 #include <stdio.h>
 #include <stdlib.h>
-#include "D:\WorkSpace\C++\C-C-WorkSpace\general\MDataStruct.h"
+#include "../general\MDataStruct.h"
 
 Nptr Insert(int key, Nptr root)
 {
@@ -38,7 +38,10 @@ Nptr Insert(int key, Nptr root)
 }
 unsigned int NodeHeight(Nptr node) //在RInsert中使用的  計算每個節點高度
 {
-
+	unsigned int left,right;
+	left = node && node->left ? node->left->height : 0;
+	right = node && node->right ? node->right->height : 0;
+	return left > right ? left + 1 : right + 1;
 }
 Nptr RInsert(int key, Nptr root)
 {
@@ -54,7 +57,7 @@ Nptr RInsert(int key, Nptr root)
 		root->left = RInsert(key, root->left);
 	else if (root->data < key)
 		root->right = RInsert(key, root->right);
-	root->height = 
+	root->height = NodeHeight(root);
 	return root;
 }
 

@@ -43,7 +43,7 @@ template <class E, class K>
 SkipList<E,K>::SkipList(K large, int MaxE , float p ){
 	CutOff = p * RAND_MAX;
 	MaxLevel = ceil(log(MaxE) / log(1/p)) -1;
-	TailKey = Large;
+	TailKey = large;
 	randomize();
 	Levels =0;
 }

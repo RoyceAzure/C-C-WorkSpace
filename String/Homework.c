@@ -1,8 +1,4 @@
 #include<stdio.h>
-<<<<<<< HEAD
-#include <Windows.h>
-=======
->>>>>>> a5ac59135ce4d70bf9c006a84b92c96638268d96
 #include<string.h>
 #define CMAX 9999
 #define NMAX 20
@@ -17,13 +13,6 @@ typedef struct file
 }file;
 typedef file *Myfile;
 typedef unsigned char bool;
-<<<<<<< HEAD
-enum ConsoleTextColor{
-                  CTC_GREEN = FOREGROUND_INTENSITY | FOREGROUND_GREEN,
-                  CTC_WHITE = FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE
-				  };
-=======
->>>>>>> a5ac59135ce4d70bf9c006a84b92c96638268d96
 
 bool isFileExist(const char * path)
 {
@@ -37,6 +26,24 @@ bool isFileExist(const char * path)
 	return false;
 }
 
+<<<<<<< HEAD
+//Myfile CreateFile()
+//{
+//	char path[NMAX];
+//	printf("Please input file name:\n");
+//	scanf("%49[^\n]%*c", path);
+//	Myfile file = (*file)malloc(sizeof(file));
+//	if(!isFileExist(path))
+//	{
+//		strcpy(file->path , path);
+//		file->fileStream = fopen(path, "w");
+//	}
+//	else
+//		printf("file already exist");
+//	fclose(file->fileStream);
+//	return file;
+//}
+=======
 <<<<<<< HEAD
 Myfile MCreateFile()
 {
@@ -69,10 +76,11 @@ Myfile CreateFile()
 }
 
 void MWriteFile(Myfile source)
-{   //¨ì©³¬°¤°¤£¯àª½±µ¨Ï¥Îsourc->bufer ¨ÃÁýµ¹fwrite???, ¥B³sstrpy¤]¤£¯à¨Ï¥Î  
+{   //ï¿½ì©³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½àª½ï¿½ï¿½ï¿½Ï¥ï¿½sourc->bufer ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fwrite???, ï¿½Bï¿½sstrpyï¿½]ï¿½ï¿½ï¿½ï¿½Ï¥ï¿½  
 =======
 	return file;
 }
+>>>>>>> ecd6d920b8f14a82050f2b7dae23c2d83123fc3a
 
 void WriteFile(Myfile source)
 {   
@@ -281,7 +289,7 @@ int main()
 }
 void AnalysicsFile(Myfile source)
 {
-	unsigned short length, token, alpha, number, i = 0;
+	unsigned short length, token = 0, alpha = 0, number = 0, i = 0;
 	bool isStriked = false;
 	char temp[CMAX];
 	strcpy(temp, source->ContentBuffer);
@@ -324,9 +332,14 @@ int main()
 =======
 	char Rbuffer[50];
 	char *testbuffer = "    abcde 123 2   ";
+<<<<<<< HEAD
+	printf("fasdfa123351321s");
+//	printf("\n %s\n", trimwhitespace(testbuffer));  
+=======
 	printf("fasdfas");
 >>>>>>> a5ac59135ce4d70bf9c006a84b92c96638268d96
 //	printf("\n %s\n", trimwhitespace(testbuffer));
+>>>>>>> ecd6d920b8f14a82050f2b7dae23c2d83123fc3a
 //	FILE *test = fopen("test2.txt","w+");
 //	fwrite(testbuffer, 1, 5, test);
 //	fclose(test);
@@ -350,7 +363,11 @@ int main()
    
    
    
+<<<<<<< HEAD
+   return 0;
+=======
    return(0);
 >>>>>>> a5ac59135ce4d70bf9c006a84b92c96638268d96
+>>>>>>> ecd6d920b8f14a82050f2b7dae23c2d83123fc3a
 	
 } 

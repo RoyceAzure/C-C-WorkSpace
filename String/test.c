@@ -48,7 +48,7 @@ Myfile MCreateFile()
 
 
 void MWriteFile(Myfile source)
-{   //¨ì©³¬°¤°¤£¯àª½±µ¨Ï¥Îsourc->bufer ¨ÃÁýµ¹fwrite???, ¥B³sstrpy¤]¤£¯à¨Ï¥Î  
+{   //ï¿½ì©³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½àª½ï¿½ï¿½ï¿½Ï¥ï¿½sourc->bufer ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fwrite???, ï¿½Bï¿½sstrpyï¿½]ï¿½ï¿½ï¿½ï¿½Ï¥ï¿½  
 	char buffer[CMAX];
 	printf("Please input content:\n");
 	fgets(buffer, CMAX, stdin);
