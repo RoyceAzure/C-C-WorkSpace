@@ -58,6 +58,8 @@ Nptr RInsert(int key, Nptr root)
 	else if (root->data < key)
 		root->right = RInsert(key, root->right);
 	root->height = NodeHeight(root);
+
+	
 	return root;
 }
 

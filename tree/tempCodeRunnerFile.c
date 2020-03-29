@@ -1,2 +1,0 @@
-
-	FindLeftRightHeight(tree);

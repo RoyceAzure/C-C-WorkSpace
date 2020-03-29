@@ -32,6 +32,7 @@
       "clinkedqueue.h": "c",
       "unordered_map": "cpp",
       "bts.h": "c",
-      "mdatastruct.h": "c"
+      "mdatastruct.h": "c",
+      "optional": "cpp"
     }
   }
