@@ -33,6 +33,8 @@
       "unordered_map": "cpp",
       "bts.h": "c",
       "mdatastruct.h": "c",
-      "optional": "cpp"
+      "optional": "cpp",
+      "tuple": "cpp",
+      "iostream": "cpp"
     }
   }

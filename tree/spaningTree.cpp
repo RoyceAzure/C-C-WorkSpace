@@ -49,9 +49,9 @@ vector<tuple<unsigned int, unsigned int>> make_vector_tuple_fromInput(const stri
     return result;
 }
 
-bool compare_tuple(const tuple<unsigned int, unsigned int> & t)
+bool compare_tuple(const tuple<unsigned int, unsigned int> & t1, const tuple<unsigned int, unsigned int> & t2)
 {
-    return get<0>(t) < get<1>(t);
+    return get<0>(t1) < get<0>(t2);
 }
 int main()
 {
