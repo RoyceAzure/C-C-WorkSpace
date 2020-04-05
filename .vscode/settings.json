@@ -34,6 +34,11 @@
       "bts.h": "c",
       "mdatastruct.h": "c",
       "optional": "cpp",
+<<<<<<< HEAD
       "ostream": "cpp"
+=======
+      "tuple": "cpp",
+      "iostream": "cpp"
+>>>>>>> origin/master
     }
   }
