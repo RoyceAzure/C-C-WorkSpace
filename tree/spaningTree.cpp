@@ -15,7 +15,7 @@ class Node
     Node *next;
 };
 
-tuple<unsigned int, unsigned int> make_tuple(unsigned int n1, unsigned int n2)
+tuple< int,  int> my_make_tuple( int n1,  int n2)
 {
     int tempint;
     if(n1 > n2)
@@ -24,8 +24,7 @@ tuple<unsigned int, unsigned int> make_tuple(unsigned int n1, unsigned int n2)
         n1 = n2;
         n2 = tempint;
     }
-    cout << n1 <<"\t" << n2 << endl;
-    tuple<unsigned int, unsigned int> temp(n1, n2);
+    tuple< int,  int> temp(n1, n2);
     return temp;
 }
 
@@ -92,11 +91,18 @@ void prim(T (&adj)[M][N], int start)
     }
 }
 
+template <typename T, int M, int N>
+void Kruskal(T (&adj)[M][N], int start)
+{
+    
+}
+
 void test()
 {
-    set<tuple<unsigned int , unsigned int>> test1;
-    test1.insert(make_tuple(2,3));
-    test1.insert(make_tuple(3,2));
+    set<tuple< int , int>> test1;
+
+    test1.insert(my_make_tuple(2,3));
+    test1.insert(my_make_tuple(2,3));
     for (auto  it=test1.begin(); it!=test1.end(); ++it)
         cout << "\t"<< get<0>(*it) <<"  "<<get<1>(*it)<<endl;
 }
