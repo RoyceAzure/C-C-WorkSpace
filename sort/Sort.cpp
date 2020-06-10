@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<time.h>
 #include<istream>
+#include<vector>
 #define SIZE_OF_ARRAY(ary) sizeof(ary) / sizeof(*ary)
 
 
@@ -178,6 +179,16 @@ void InsertSort(T a[],int length){
 		Insert(a,i,t);
 	}
 		
+}
+
+template<class T>
+vector<T> Quicksort(vector<T> ary)
+{
+	int pviot = *(ary.end() - 1);
+	for (int i = 0; i < ary.size() - 1; i++)
+	{
+		
+	}
 }
 /*---------------------------- Sort------------------------
 ----------------------------------------------------------------*/
