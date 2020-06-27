@@ -192,6 +192,17 @@ vector<int> MaxHeapInsert(vector<int> &array, int target)
 		i = i%2 == 0?(i/2)-1 : i/2;
 	} 
 	array[i] = target;
+}
+vector<int> MaxHeapInsertInplace(vector<int> &array, int n) //給定1個array, 做inplace insert
+{
+	int i = n;
+	int temp = array[n];
+	while(array[i] < temp && i > 0)    //只要target 比P 還要大  就 shift, 改變i , 
+	{
+		array[i] = array[i%2 == 0?(i/2)-1 : i/2] ;
+		i = i%2 == 0?(i/2)-1 : i/2;
+	} 
+	array[i] = temp;
 }`
 /*---------------------------- Sort------------------------
 ----------------------------------------------------------------*/
