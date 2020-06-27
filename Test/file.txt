@@ -1,3 +1,0 @@
-this is tutorials yiibai
-!c standard library
-!library functions and macros

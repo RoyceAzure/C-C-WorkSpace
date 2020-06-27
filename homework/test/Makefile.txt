@@ -1,0 +1,9 @@
+
+target output: dependencies w9.o
+    g++ w9.o -o w9
+
+target  w9.o: dependencies w9.cpp w9.h
+    g++ -c w9.cpp
+
+clean:
+    rm *.o 

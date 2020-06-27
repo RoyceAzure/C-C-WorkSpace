@@ -1,6 +1,6 @@
 #include<iostream>
-#include"D:\cworkspace\Exception\exception.h"
-#include"D:\cworkspace\general\random.h"
+#include"D:\Workspace\cworkspace\Exception\exception.h"
+#include"D:\Workspace\cworkspace\general\random.h"
 template<class T>
 class Array1D{
 	template<class U>
