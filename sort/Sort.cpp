@@ -212,6 +212,30 @@ vector<int> CreateHeap(vector<int> &array)
 		MaxHeapInsertInplace(array, i);
 	}
 }
+
+int DeleteHeap(vector<int> array, int n) // j用來指向child, i 為當前parent 
+{
+	int i = 0, j, x, temp, val;
+	j = i*2+1;
+	x = array[0];
+	array[0] = array[n];
+	while(j < n-1)  //j 必須在回圈內做改變 
+	{
+		if(array[j] < array[j+1])
+			j = j+1;
+		if(array[i] < array[j])
+		{
+			temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+			i = j;
+			j = j*2+1;
+		}
+		else
+			break;
+	}
+	array[n] = x;
+}
 /*---------------------------- Sort------------------------
 ----------------------------------------------------------------*/
 
