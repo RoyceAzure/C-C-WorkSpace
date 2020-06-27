@@ -203,7 +203,15 @@ vector<int> MaxHeapInsertInplace(vector<int> &array, int n) //給定1個array, �
 		i = i%2 == 0?(i/2)-1 : i/2;
 	} 
 	array[i] = temp;
-}`
+}
+vector<int> CreateHeap(vector<int> &array)
+{
+	int n = array.size();
+	for(int i = 2; i<n; i++)
+	{
+		MaxHeapInsertInplace(array, i);
+	}
+}
 /*---------------------------- Sort------------------------
 ----------------------------------------------------------------*/
 
